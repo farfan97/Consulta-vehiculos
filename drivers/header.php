@@ -16,20 +16,16 @@
     <div class="container">
     <nav>
       <div class="nav-wrapper blue">
-        <a href="#!" class="brand-logo">Acme S.A.</a>
+        <a href="../index.html" class="brand-logo">Acme S.A.</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="index.php">Inicio</a></li>
-          <li><a href="search.php">Buscar</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <li><a href="registro.php">Registro</a></li>
-          <li><a href="act.php">Actualizacion</a></li>
           <li><a href="report.php">Reporte</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
           <li><a href="index.php">Inicio</a></li>
-          <li><a href="search.php">Buscar</a></li>
           <li><a href="registro.php">Registro</a></li>
-          <li><a href="act.php">Actualizacion</a></li>
           <li><a href="report.php">Reporte</a></li>
         </ul>
       </div>
