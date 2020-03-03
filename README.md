@@ -2,7 +2,7 @@
 Aplicacion de registro de vehiculos
 
 Aplicacion de Registro de:
-- Conductore
+- Conductores
 - vehiculos
 - Propietarios de vehiculos
 
