@@ -17,7 +17,7 @@ $driver= new Driver();
 		$driver->setUbicacion($_POST['ubicacion']);
 
 		$crud->insertar($driver);
-		header('Location: index.php');
+		header('Location: ../index.html');
 
 	}elseif(isset($_POST['actualizar'])){
 		$driver->setId($_POST['id']);

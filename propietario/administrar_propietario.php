@@ -17,7 +17,7 @@ $propietario= new Propietario();
 		$propietario->setUbicacion($_POST['ubicacion']);
 
 		$crud->insertar($propietario);
-		header('Location: ../index.php');
+		header('Location: ../index.html');
 
 	}elseif(isset($_POST['actualizar'])){
 		$propietario->setId($_POST['id']);

@@ -16,7 +16,7 @@ $vehiculo= new Vehiculo();
 		$vehiculo->setPropietario($_POST['propietario']);
 
 		$crud->insertar($vehiculo);
-		header('Location: index.php');
+		header('Location: ../index.html');
 
 	}elseif(isset($_POST['actualizar'])){
 		$vehiculo->setId($_POST['id']);

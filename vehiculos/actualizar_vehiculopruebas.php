@@ -17,8 +17,7 @@
 		<tr>
 			<input type='hidden' name='id' value='<?php echo $vehiculo->getId()?>'>
 			<td>Placa:</td>
-			<td><input type='hidden' name='placa' value='<?php echo $vehiculo->getPlaca()?>'>
-				<input disabled id="disabled" type="text" class="validate" value='<?php echo $vehiculo->getPlaca()?>'>
+			<td><input type='text' name='placa' value='<?php echo $vehiculo->getPlaca()?>'>
 			</td>
 
 			<td>Color:</td>

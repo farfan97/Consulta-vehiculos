@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-02-2020 a las 02:40:07
+-- Tiempo de generación: 03-03-2020 a las 21:06:53
 -- Versión del servidor: 10.4.11-MariaDB
--- Versión de PHP: 7.4.2
+-- Versión de PHP: 7.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `acme`
 --
-CREATE DATABASE IF NOT EXISTS `acme` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `acme`;
 
 -- --------------------------------------------------------
 
@@ -45,7 +43,9 @@ CREATE TABLE `cars` (
 --
 
 INSERT INTO `cars` (`id`, `placa`, `color`, `marca`, `tipo`, `driver`, `propietario`) VALUES
-
+(1, 'mvj234', 'Verde', 'Nissan', 'Particular', 'Julieth Andrea Tapiero Nino', 'Juan Camilo Farfan Juanias'),
+(2, 'ach450', 'Negro', 'Toyota', 'Particular', 'Julieth Andrea Tapiero Nino', 'Juan Camilo Farfan Juanias'),
+(3, 'asd123', 'Blanco', 'Ferrari', 'Particular', 'Julieth Andrea Tapiero Nino', 'Juan Camilo Farfan Juanias');
 
 -- --------------------------------------------------------
 
@@ -69,7 +69,7 @@ CREATE TABLE `driver` (
 --
 
 INSERT INTO `driver` (`id`, `cedula`, `pnombre`, `snombre`, `apellidos`, `direccion`, `telefono`, `ubicacion`) VALUES
-
+(2, '1144157989', 'Julieth', 'Andrea', 'Tapiero Nino', 'Calle 97 sur #2-10', '3196201030', 'Bogota');
 
 -- --------------------------------------------------------
 
@@ -93,6 +93,7 @@ CREATE TABLE `persona` (
 --
 
 INSERT INTO `persona` (`id`, `cedula`, `pnombre`, `snombre`, `apellidos`, `direccion`, `telefono`, `ubicacion`) VALUES
+(7, '1023019809', 'Juan', 'Camilo', 'Farfan Juanias', 'Calle 97 sur #2-10', '3229423051', 'Bogota');
 
 -- --------------------------------------------------------
 
@@ -149,19 +150,19 @@ ALTER TABLE `tipo`
 -- AUTO_INCREMENT de la tabla `cars`
 --
 ALTER TABLE `cars`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `driver`
 --
 ALTER TABLE `driver`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `persona`
 --
 ALTER TABLE `persona`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `tipo`
