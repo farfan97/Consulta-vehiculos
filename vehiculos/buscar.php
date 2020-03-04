@@ -64,10 +64,10 @@
         // Ahora, sabemos que existe solamente un único resultado en este ejemplo, por lo
         // que vamos a colocarlo en un array asociativo donde las claves del mismo son los
         // nombres de las columnas de la tabla
-        $actor = $resultado->fetch_assoc();
+        $car = $resultado->fetch_assoc();
         ?>
         <div class="container">
-          <h2><?php echo $actor['placa'];?></h2>
+          <h2><?php echo $car['placa'];?></h2>
           <table class="responsive-table centered striped bordered">
             <head>
               <td>Propietario</td>
@@ -76,9 +76,9 @@
             </head>
             <body>
               <tr>
-                <td><?php echo $actor['propietario'];?></td>
-                <td><?php echo $actor['driver'];?></td>
-                <td><?php echo $actor['color'];?></td>
+                <td><?php echo $car['propietario'];?></td>
+                <td><?php echo $car['driver'];?></td>
+                <td><?php echo $car['color'];?></td>
               </tr>
             </body>
           </table>

@@ -9,7 +9,7 @@ $propietario= new Propietario();
 $listaPropietarios=$crud->mostrar();
 ?>
   <div class="container">
-    <table border=1>
+    <table class="responsive-table centered striped bordered">
   		<head>
   			<td>Cedula</td>
 				<td>Primer Nombre</td>

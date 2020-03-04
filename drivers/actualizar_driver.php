@@ -17,7 +17,8 @@
 		<tr>
 			<input type='hidden' name='id' value='<?php echo $driver->getId()?>'>
 			<td>Cedula:</td>
-			<td> <input type='number' name='cedula' value='<?php echo $driver->getCedula()?>'></td>
+			<td> <input type='hidden' name='cedula' value='<?php echo $driver->getCedula()?>'>
+			<input disabled id="disabled" type="text" class="validate" value='<?php echo $driver->getCedula()?>'></td>
 		</tr>
 		<tr>
 			<td>Primer Nombre:</td>
@@ -47,3 +48,4 @@
 	<input type='hidden' name='insertar' value='insertar'>
 </table>
 </div>
+<?php include "footer.php";?>

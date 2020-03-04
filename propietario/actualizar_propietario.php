@@ -13,11 +13,13 @@
 	<h4>Actualiza los datos de la persona Propietaria</h4>
 	</header>
 	<form action='administrar_propietario.php' method='post'>
-	<table>
+	<table class="responsive-table centered striped bordered">
 		<tr>
 			<input type='hidden' name='id' value='<?php echo $propietario->getId()?>'>
 			<td>Cedula:</td>
-			<td> <input type='number' name='cedula' value='<?php echo $propietario->getCedula()?>'></td>
+			<td> <input type='hidden' name='cedula' value='<?php echo $propietario->getCedula()?>'>
+			<input disabled id="disabled" type="text" class="validate" value='<?php echo $propietario->getCedula()?>'>
+		</td>
 		</tr>
 		<tr>
 			<td>Primer Nombre:</td>
@@ -47,3 +49,4 @@
 	<input type='hidden' name='insertar' value='insertar'>
 </table>
 </div>
+<?php include "footer.php"; ?>
